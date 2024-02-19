@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>ThrumboArrow</defName>
+		<label>Thrumbow arrow</label>
+		<graphicData>
+			<texPath>Thrumarrow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>ArrowHighVelocity</damageDef>
+			<damageAmountBase>44</damageAmountBase>
+			<stoppingPower>4</stoppingPower>
+			<speed>60</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseWeaponNeolithic">
+		<defName>Thrumbow</defName>
+		<label>Thrumbo bow</label>
+		<description>Big shiny bow that has two thrumbo horns on it, both on top and down.</description>
+		<graphicData>
+			<texPath>Thrumbow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Bow_Recurve</soundInteract>
+		<costList>
+			<WoodLog>40</WoodLog>
+			<ThrumboHorn>2</ThrumboHorn>
+		</costList>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<statBases>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>1.3</Mass>
+			<AccuracyTouch>0.80</AccuracyTouch>
+			<AccuracyShort>0.88</AccuracyShort>
+			<AccuracyMedium>0.85</AccuracyMedium>
+			<AccuracyLong>0.85</AccuracyLong>
+			<RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>NeolithicRangedDecent</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Ranged</li>
+			<li>RangedLight</li>
+		</weaponClasses>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+			<displayPriority>520</displayPriority>
+		</recipeMaker>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>ThrumboArrow</defaultProjectile>
+				<warmupTime>1.15</warmupTime>
+				<range>30.9</range>
+				<soundCast>Bow_Recurve</soundCast>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>limb</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<rotateInShelves>false</rotateInShelves>
+	</ThingDef>
+</Defs>

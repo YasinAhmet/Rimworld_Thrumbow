@@ -1,0 +1,14 @@
+﻿<ModMetaData>
+  <name>TestMod</name>
+  <author>Yasin</author>
+  <packageId>Rus.Biotech.Nastia</packageId>
+  <supportedVersions>
+	<li>1.4</li>
+  </supportedVersions>
+  <loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+	</loadAfter>
+</ModMetaData>
